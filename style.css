@@ -12,17 +12,17 @@ body {
     /* background-color: #ffffff; */
 }
 
-header {
+/* header {
     /* background-image: url('pics/zonal_stress.png'); */
     /* background-image: url('pics/mhell_AA16_0009.jpg'); */
-    background-size: cover;
-    color: #fff;
+    /* background-size: cover;
+    /* color: #fff;
     text-align: center;
     padding: 2em;
     height: 30vh;
-    /* height: 54vh; */
-    position: relative;
-}
+    height: 54vh; 
+    position: relative; 
+/* } */
 
 /* Overlay to create fading effect
 /* header::before {
