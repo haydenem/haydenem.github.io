@@ -14,12 +14,13 @@ body {
 
 header {
     /* background-image: url('pics/zonal_stress.png'); */
-    background-image: url('pics/mhell_AA16_0009.jpg');
+    /* background-image: url('pics/mhell_AA16_0009.jpg'); */
     background-size: cover;
     color: #fff;
     text-align: center;
     padding: 2em;
-    height: 54vh;
+    height: 30vh;
+    /* height: 54vh; */
     position: relative;
 }
 
