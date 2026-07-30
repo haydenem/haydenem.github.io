@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>Emily E. Hayden, Ph.D.</title>
     <link rel="stylesheet" href="style.css">
         <!-- Add the Font Awesome stylesheet 
     <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
@@ -17,32 +17,53 @@
 </head>
 <body>
 
-<header>
+	<!-- Top bar above the banner (retained header text) -->
+<div class="topbar">
+    <span class="topbar-name">Emily E. Hayden ("Hayden")<span class="light_sub"> | ASP Postdoctoral Fellow | NSF NCAR - CGD</span></span>
+</div>
+
+<header class="banner">
+    <!-- Banner image. NOTE: file is test_photo.JPG (uppercase .JPG) - the path is case-sensitive on GitHub Pages. -->
+    <img class="banner-img" id="bannerImg" src="pics/test_photo.JPG" alt="Cotopaxi volcano at sunrise">
+ 
+    <div class="banner-overlay">
+        <h1 class="banner-title">Emily E. Hayden, Ph.D.</h1>
+    </div>
+ 
+    <nav>
+        <a href="#home">Home</a>
+        <a href="pics/Hayden_CV_04_2026.pdf">CV</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+    </nav>
+
+	
+<!--header>
    <div class="header-content">
         <h3>Emily E. Hayden ("Hayden")<span class="light_sub"> | ASP Postdoctoral Fellow | NSF NCAR - CGD</span></h3>
 
         <h1></br></br></br></br></br>
             Academic Site (Under Construction)</br> 
             <!--<span class="light_sub">Winds | Waves | Sea Ice</span> -->
-         </h1> 
+         <!--/h1> 
         
         <nav>
             <a href="#home">Home</a>
             <a href="pics/Hayden_CV_04_2026.pdf">CV</a>
             <!--<a href="#research">Research</a> -->
-            <a href="#publications">Publications</a>
+            <!--a href="#publications">Publications</a>
 
         </nav>
     </div> 
 <!--              <a href="#code">Code</a>
 -->
-</header>
+<!--/header-->
 
 <section>
     <div class="bio">
         <img src="pics/profile_pic.jpg" alt="Researcher Image">
-        <h2>Emily E. Hayden ("Hayden")</h2>
-        Advanced Study Program Postdoctoral Fellow<br>
+		<h2 class="bio-name">Emily E. Hayden ("Hayden")</h2>        
+		Advanced Study Program Postdoctoral Fellow<br>
         NSF NCAR<br>
 		CGD Laboratory<br>
         Boulder, CO<br>
@@ -51,8 +72,8 @@
 
           <span class="adress">
           ehayden @ ucar.edu<p>
-          <a href="pics/CV_mhell.pdf" target=blank>Curriculum Vitae</a><p>
-
+		<a href="pics/Hayden_CV_04_2026.pdf" target=blank>Curriculum Vitae</a><p>
+			
         <div class="social-icons">
             <a href="https://github.com/haydenem" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/emily-e-hayden/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -72,7 +93,7 @@
 <p> Prior to my Ph.D., I earned my M.Sc. in Ocean and Atmospheric Physics from OSU, and my B.A. in Physics from the University of 
 	Colorado - Boulder. </p>
 
-<p>My research focus is... coming soon
+<!--<p>My research focus is... coming soon
 	
 <p>
     </div>
@@ -94,7 +115,18 @@ circulation. I currently focus on:</p>
 
 
 <section id="research">
-        <h2>Research Projects</h2><br>
+    <h2>Research</h2>
+    <p class="research-intro">My research focuses on air-sea coupled processes that contribute to climate variability
+		and predictability, with a particular focus on spatial and temporal scale-interactions.</p>
+ 
+    <!-- Clickable topic links. Each anchors to a topic block below on this same page.
+         To add a topic: add a link here and copy one <section class="research-content"> block below,
+         giving it a matching id. -->
+    <div class="research-nav">
+        <a href="#bering-sea">Bering Sea Thermal Variability</a>
+        <a href="#heat-fluxes">Air&ndash;Sea Heat Exchange</a>
+        <a href="#coupling">Cross-Timescale Air&ndash;Sea Coupling</a>
+    </div>
 </section>
 
 <!-- <section class="research-content">
