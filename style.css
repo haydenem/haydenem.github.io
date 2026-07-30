@@ -346,8 +346,8 @@ footer {
 .banner {
     position: relative;
     width: 100%;
-    height: 46vh;
-    min-height: 320px;
+    height: 32vh;
+    min-height: 224px;
     overflow: hidden;
     background-color: #101f2e; /* dusk-blue backdrop; banner darkens as opacity drops */
 }
@@ -505,7 +505,7 @@ a:focus-visible {
 }
 
 @media (max-width: 760px) {
-    .banner { height: 38vh; min-height: 240px; }
+    .banner { height: 27vh; min-height: 168px; }
     section { flex-direction: column; padding: 1.25em; }
     .bio, .text { width: 100%; padding-left: 0; }
     .research-content { flex-direction: column; }
@@ -551,4 +551,31 @@ a:focus-visible {
     .page-nav { text-align: left; }
     .page-nav a { padding: 0.4em 0.5em 0.4em 0; }
     .page-title { font-size: 2em; }
+}
+
+
+/* =====================================================================
+   CONTENT WIDTH — narrower, centered column with side margins
+   (reference-like spacing; overrides the earlier 1200px max-widths)
+   ===================================================================== */
+:root { --content-width: 960px; }
+
+section,
+.research-content,
+.publications,
+.research-intro,
+.research-nav,
+.page-header,
+.video-section,
+.header-content {
+    max-width: var(--content-width);
+}
+
+/* Align the top-bar text with the content column instead of the page edge */
+.topbar { padding-left: 0; padding-right: 0; }
+.topbar-name {
+    display: block;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 2em;
 }
